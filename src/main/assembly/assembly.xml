@@ -22,16 +22,16 @@
 			<source>lib/servletbridge.jar</source>
 			<outputDirectory>eclipse/launchers</outputDirectory>
 		</file>
-	</files>
-	<fileSets>
-		<fileSet>
+		<file>
+			<source>lib/org.eclipse.osgi.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
-			<includes>
-				<include>lib/org.eclipse.osgi.jar</include>
-				<include>lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</include>
-			</includes>
-		</fileSet>
-	</fileSets>
+		</file>
+		<file>
+			<source>lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</source>
+			<outputDirectory>eclipse/plugins</outputDirectory>
+		</file>
+	</files>
+	
 	<dependencySets>
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
