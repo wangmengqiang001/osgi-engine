@@ -1,0 +1,7 @@
+RemoteSystemsTempFiles/
+.recommenders/
+.metadata/
+# .gitignore
+Servers/
+.settings/
+target/
