@@ -18,28 +18,28 @@
 			<source>src/main/resources/configuration/config.ini</source>
 			<outputDirectory>eclipse/configuration/</outputDirectory>
 		</file>
+		<file>
+			<source>lib/servletbridge.jar</source>
+			<outputDirectory>eclipse/launchers</outputDirectory>
+		</file>
 	</files>
-	<dependencySets>
-		<dependencySet>
-			<useProjectArtifact>false</useProjectArtifact>
-			<unpack>false</unpack>
+	<fileSets>
+		<fileSet>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 			<includes>
-				<include>org.eclipse.platform:org.eclipse.osgi</include>
-				<include>org.eclipse.platform:org.eclipse.equinox.console</include>
-				<include>org.apache.felix:org.apache.felix.gogo.shell</include>
-				<include>org.apache.felix:org.apache.felix.gogo.runtime</include>
-				<include>org.apache.felix:org.apache.felix.gogo.command</include>				
+				<include>lib/org.eclipse.osgi.jar</include>
+				<include>lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</include>
 			</includes>
-		</dependencySet>
+		</fileSet>
+	</fileSets>
+	<dependencySets>
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
 			<unpack>false</unpack>
 			<outputDirectory>eclipse/launchers</outputDirectory>
 			<includes>
 				<include>org.crossbridge.osgi.web:crossbridge</include>
-				<include>org.crossbridge:own.bridge.upgrade</include>
-				<include>org.eclipse.platform:org.eclipse.equinox.servletbridge</include>
+				<include>org.crossbridge:own.bridge</include>				
 			</includes>
 		</dependencySet>		
 	</dependencySets>
