@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.crossbridge</groupId>
 	<artifactId>osgi-engine</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<name>osgi engine for equinox osgi-3.3</name>
+	<version>3.12.100-SNAPSHOT</version>
+	<name>osgi engine for equinox osgi-3.12.100</name>
 	<packaging>pom</packaging>
 	<dependencies>
 		<dependency>
