@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.crossbridge</groupId>
-	<artifactId>osgi-engine</artifactId>
-	<version>1.0.0-osgi-3.5.1</version>
+	<artifactId>osgi-engine-3.5.1</artifactId>
+	<version>1.0.0</version>
 	<name>osgi engine for equinox osgi-3.5.1</name>
 	<packaging>pom</packaging>
 	<dependencies>
@@ -67,7 +67,7 @@
 					<descriptors>
 						<descriptor>${project.basedir}/src/main/assembly/assembly.xml</descriptor>
 					</descriptors>
-					<finalName>osgi-engine-${project.version}</finalName>
+					<finalName>${artifactId}-${project.version}</finalName>
 
 				</configuration>
 			</plugin>
