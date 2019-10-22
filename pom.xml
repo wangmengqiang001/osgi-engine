@@ -9,35 +9,47 @@
 	<packaging>pom</packaging>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/org.eclipse.osgi -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.eclipse.osgi</groupId> -->
-<!-- 			<artifactId>org.eclipse.osgi</artifactId> -->
-<!-- 			<version>3.5.1.R35x_v20090827</version> -->
-<!-- 			<scope>system</scope> -->
-<!-- 			<systemPath>${project.basedir}/lib/org.eclipse.osgi.jar</systemPath> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.eclipse.osgi</groupId>
+			<artifactId>org.eclipse.osgi</artifactId>
+			<version>3.5.1.R35x_v20090827</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/org.eclipse.osgi-3.5.1.R35x_v20090827.jar</systemPath>
+		</dependency>
 		
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.eclipse.osgi</groupId> -->
-<!-- 			<artifactId>org.eclipse.osgi.service</artifactId> -->
-<!-- 			<version>3.2.0.v20090520-1800</version> -->
-<!-- 			<scope>system</scope> -->
-<!-- 			<systemPath>${project.basedir}/lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</systemPath> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.eclipse.osgi</groupId>
+			<artifactId>org.eclipse.osgi.service</artifactId>
+			<version>3.2.0.v20090520-1800</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</systemPath>
+		</dependency>
 		
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.eclipse.osgi</groupId> -->
-<!-- 			<artifactId>org.eclipse.equinox.servletbridge</artifactId> -->
-<!-- 			<version>1.0.0</version> -->
-<!-- 			<scope>system</scope> -->
-<!-- 			<systemPath>${project.basedir}/lib/servletbridge.jar</systemPath> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.eclipse.osgi</groupId>
+			<artifactId>org.eclipse.equinox.servletbridge</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/servletbridge.jar</systemPath>
+		</dependency>
 
 
 		<dependency>
 			<groupId>org.crossbridge.osgi.web</groupId>
 			<artifactId>crossbridge</artifactId>
 			<version>1.0.0.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.platform</groupId>
+					<artifactId>
+						org.eclipse.equinox.servletbridge
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.platform</groupId>
+					<artifactId>org.eclipse.osgi</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	
 		<dependency>
