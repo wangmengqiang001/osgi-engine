@@ -4,28 +4,19 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
 	<id>osgi-engine-zip</id>	
 	<formats>
-<!-- 		<format>dir</format> -->
+<!--  		<format>dir</format> -->
 		<format>zip</format>
 		<!-- <format>tar.gz</format> -->
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
-	<files>
-		<file>
-			<source>src/main/resources/launch.ini</source>
-			<outputDirectory>eclipse/</outputDirectory>
-		</file>
-		<file>
-			<source>src/main/resources/configuration/config.ini</source>
-			<outputDirectory>eclipse/configuration/</outputDirectory>
-		</file>
-	</files>
+
 	<dependencySets>
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
 			<unpack>false</unpack>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 			<includes>
-				<include>org.eclipse.platform:org.eclipse.osgi</include>
+<!-- 				<include>org.eclipse.platform:org.eclipse.osgi</include> -->
 				<include>org.eclipse.platform:org.eclipse.equinox.console</include>
 				<include>org.apache.felix:org.apache.felix.gogo.shell</include>
 				<include>org.apache.felix:org.apache.felix.gogo.runtime</include>
@@ -43,4 +34,20 @@
 			</includes>
 		</dependencySet>		
 	</dependencySets>
+	<files>
+		<file>
+			<source>src/main/resources/launch.ini</source>
+			<outputDirectory>eclipse/</outputDirectory>
+		</file>
+		<file>
+			<source>src/main/resources/configuration/config.ini</source>
+			<outputDirectory>eclipse/configuration/</outputDirectory>
+		</file>
+		<file> 
+		    <!-- file name must be in format org.eclipse.osgi_xxx.jar  -->
+			<source>src/main/lib/org.eclipse.osgi_3.12.100.v20180210-1608.jar</source>
+			<outputDirectory>eclipse/plugins</outputDirectory>			
+		</file>
+	</files>
+	
 </assembly>
