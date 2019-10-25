@@ -9,29 +9,29 @@
 	<packaging>pom</packaging>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/org.eclipse.osgi -->
-		<dependency>
-			<groupId>org.eclipse.osgi</groupId>
-			<artifactId>org.eclipse.osgi</artifactId>
-			<version>3.5.1.R35x_v20090827</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/org.eclipse.osgi-3.5.1.R35x_v20090827.jar</systemPath>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.eclipse.osgi</groupId> -->
+<!-- 			<artifactId>org.eclipse.osgi</artifactId> -->
+<!-- 			<version>3.5.1.R35x_v20090827</version> -->
+<!-- 			<scope>system</scope> -->
+<!-- 			<systemPath>${project.basedir}/src/main/lib/org.eclipse.osgi_3.5.1.R35x_v20090827.jar</systemPath> -->
+<!-- 		</dependency> -->
 		
-		<dependency>
-			<groupId>org.eclipse.osgi</groupId>
-			<artifactId>org.eclipse.osgi.service</artifactId>
-			<version>3.2.0.v20090520-1800</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</systemPath>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.eclipse.osgi</groupId> -->
+<!-- 			<artifactId>org.eclipse.osgi.service</artifactId> -->
+<!-- 			<version>3.2.0.v20090520-1800</version> -->
+<!-- 			<scope>system</scope> -->
+<!-- 			<systemPath>${project.basedir}/src/main/lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</systemPath> -->
+<!-- 		</dependency> -->
 		
-		<dependency>
-			<groupId>org.eclipse.osgi</groupId>
-			<artifactId>org.eclipse.equinox.servletbridge</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/servletbridge.jar</systemPath>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.eclipse.osgi</groupId> -->
+<!-- 			<artifactId>org.eclipse.equinox.servletbridge</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 			<scope>system</scope> -->
+<!-- 			<systemPath>${project.basedir}/src/main/lib/servletbridge.jar</systemPath> -->
+<!-- 		</dependency> -->
 
 
 		<dependency>
@@ -79,7 +79,7 @@
 					<descriptors>
 						<descriptor>${project.basedir}/src/main/assembly/assembly.xml</descriptor>
 					</descriptors>
-					<finalName>${artifactId}-${project.version}</finalName>
+					<finalName>${project.artifactId}-${project.version}</finalName>
 
 				</configuration>
 			</plugin>

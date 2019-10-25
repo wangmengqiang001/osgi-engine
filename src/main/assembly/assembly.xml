@@ -19,33 +19,33 @@
 			<outputDirectory>eclipse/configuration/</outputDirectory>
 		</file>
 		<file>
-			<source>lib/servletbridge.jar</source>
+			<source>src/main/lib/servletbridge.jar</source>
 			<outputDirectory>eclipse/launchers</outputDirectory>
 		</file>
 		<!--  osgi framework jar must start as "org.eclipse.osgi_xxx.xx.x.jar " -->
 		<file>
-			<source>lib/org.eclipse.osgi_3.5.1.R35x_v20090827.jar</source>
+			<source>src/main/lib/org.eclipse.osgi_3.5.1.R35x_v20090827.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 		<file>
-			<source>lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</source>
+			<source>src/main/lib/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 		<file>
-			<source>lib/org.eclipse.equinox.common_3.3.0.200704022148.jar</source>
+			<source>src/main/lib/org.eclipse.equinox.common_3.3.0.200704022148.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 		<file>
-			<source>lib/org.eclipse.equinox.http.registry_1.0.0.200704022148.jar</source>
+			<source>src/main/lib/org.eclipse.equinox.http.registry_1.0.0.200704022148.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 			<file>
-			<source>lib/org.eclipse.equinox.http.servlet_1.0.0.200704022148.jar</source>
+			<source>src/main/lib/org.eclipse.equinox.http.servlet_1.0.0.200704022148.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 		
 		<file>
-			<source>lib/org.eclipse.update.configurator_3.2.100.v20070322.jar</source>
+			<source>src/main/lib/org.eclipse.update.configurator_3.2.100.v20070322.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 		<!--  don't include http.servletbridge, it will register a servlet, which cause failure of register servlet later -->
@@ -54,7 +54,7 @@
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file -->
 		<file>
-			<source>lib/sample.http_1.0.0.jar</source>
+			<source>src/main/lib/sample.http_1.0.0.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>
 		</file>
 	</files>
