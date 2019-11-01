@@ -11,18 +11,18 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 
 	<dependencySets>
-		<dependencySet>
-			<useProjectArtifact>false</useProjectArtifact>
-			<unpack>false</unpack>
-			<outputDirectory>eclipse/plugins</outputDirectory>
-			<includes>
+<!-- 		<dependencySet> -->
+<!-- 			<useProjectArtifact>false</useProjectArtifact> -->
+<!-- 			<unpack>false</unpack> -->
+<!-- 			<outputDirectory>eclipse/plugins</outputDirectory> -->
+<!-- 			<includes> -->
 <!-- 				<include>org.eclipse.platform:org.eclipse.osgi</include> -->
-				<include>org.eclipse.platform:org.eclipse.equinox.console</include>
-				<include>org.apache.felix:org.apache.felix.gogo.shell</include>
-				<include>org.apache.felix:org.apache.felix.gogo.runtime</include>
-				<include>org.apache.felix:org.apache.felix.gogo.command</include>				
-			</includes>
-		</dependencySet>
+<!-- 				<include>org.eclipse.platform:org.eclipse.equinox.console</include> -->
+<!-- 				<include>org.apache.felix:org.apache.felix.gogo.shell</include> -->
+<!-- 				<include>org.apache.felix:org.apache.felix.gogo.runtime</include> -->
+<!-- 				<include>org.apache.felix:org.apache.felix.gogo.command</include>				 -->
+<!-- 			</includes> -->
+<!-- 		</dependencySet> -->
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
 			<unpack>false</unpack>
@@ -46,6 +46,22 @@
 		<file> 
 		    <!-- file name must be in format org.eclipse.osgi_xxx.jar  -->
 			<source>src/main/lib/org.eclipse.osgi_3.12.100.v20180210-1608.jar</source>
+			<outputDirectory>eclipse/plugins</outputDirectory>			
+		</file>
+		<file> 		    
+			<source>src/main/lib/org.eclipse.equinox.console_1.1.300.v20170512-2111.jar</source>
+			<outputDirectory>eclipse/plugins</outputDirectory>			
+		</file>
+		<file> 		    
+			<source>src/main/lib/org.apache.felix.gogo.shell_0.10.0.v201212101605.jar</source>
+			<outputDirectory>eclipse/plugins</outputDirectory>			
+		</file>
+		<file> 		    
+			<source>src/main/lib/org.apache.felix.gogo.runtime_0.10.0.v201209301036.jar</source>
+			<outputDirectory>eclipse/plugins</outputDirectory>			
+		</file>
+		<file> 		    
+			<source>src/main/lib/org.apache.felix.gogo.command_0.10.0.v201209301215.jar</source>
 			<outputDirectory>eclipse/plugins</outputDirectory>			
 		</file>
 	</files>
