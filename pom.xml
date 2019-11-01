@@ -8,13 +8,13 @@
 	<name>osgi engine for equinox osgi-3.12.100</name>
 	<packaging>pom</packaging>
 	<dependencies>
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.osgi</artifactId>
-			<version>3.12.100</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/lib/org.eclipse.osgi_3.12.100.v20180210-1608.jar</systemPath>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.eclipse.platform</groupId> -->
+<!-- 			<artifactId>org.eclipse.osgi</artifactId> -->
+<!-- 			<version>3.12.100</version> -->
+<!-- 			<scope>system</scope> -->
+<!-- 			<systemPath>${project.basedir}/src/main/lib/org.eclipse.osgi_3.12.100.v20180210-1608.jar</systemPath> -->
+<!-- 		</dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.equinox.console -->
 		<dependency>
 			<groupId>org.eclipse.platform</groupId>
@@ -66,7 +66,7 @@
 					<descriptors>
 						<descriptor>${project.basedir}/src/main/assembly/assembly.xml</descriptor>
 					</descriptors>
-					<finalName>${artifactId}-${project.version}</finalName>
+					<finalName>${project.artifactId}-${project.version}</finalName>
 
 				</configuration>
 			</plugin>
